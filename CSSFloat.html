@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template Float</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: rgb(202, 121, 121);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+</head>
+<body>
+
+    
+<h2>CSS Layout Float</h2>
+<p>In this page, I haved borrowed the example html page from <a href="https://www.w3schools.com/">www.w3schools.com</a>
+The point of the page is to demonstrate the CSS FLOAT method.  I have rewritten the contact to 
+show some basic physics concepts.
+</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Work and Energy</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Energy</a></li>
+      <li><a href="#">Systems</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programming.html" >Programming</a></li>
+      <li><a href="CSSFloat.html" >CSSFloat Layout</a></li>
+      <li><a href="CSSFlexbox.html" >CSSFlexbox Layout</a></li>
+    </nav>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Energy</h1>
+    <p>Energy is an abstract concept that helps scientists keep track of dynamics of physical systems.
+    In everyday language, we use the idea of energy to determine how power we gain or lose
+    in different processes such as a windmill farm that produces wind power.
+    <br><br>
+    But, we need to better define this idea of energy because there are differents kinds of
+    energy.  The main two categories are:
+    <ul>
+      <li>POTENTIAL energy</li>
+      <li>KINETIC energy</li>
+    </ul>
+    <br><br>
+    Potential energy is a type of energy that an object may have where the amount of energy 
+    directly correlates to the POTENTIAL of that object TO DO SOMETHING.
+    <br><br>
+    Kinetic energy is a type of energy that an object may have where the amount of energy
+    directly correlates to how much the object is MOVING.
+    <br><br>
+    Those descriptions might sound <em>too nebulous</em>, but some examples are definitely in order.
+    For Kinetic energy, KE, the amount an object has tells us, more specifically, how fast it moves.
+    For example, a baseball with 40 J (the Joule, J, is a unit of energy) of KE is moving
+    faster than an identical baseball with 20 J of KE.  We say identical because the formula 
+    for KE is 
+    <br><br>
+    <math>
+      <mrow></mrow>
+    </math>
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p style="text-align:left;">Author: elmobros &copy; 2021 </p>
+</footer>
+
+</body>
+</html>

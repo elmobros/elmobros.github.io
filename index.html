@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-------------------------------start of doc----------------------->
+<html lang="en-US">
+
+
+<!-------------------------------head----------------------->
+<head>
+    
+    
+    <title>My GitHub Home page</title> 
+
+    <style>
+        .nav ul {
+            list-style-type: none;
+            margin:0px;
+            padding: 10px;
+            overflow:hidden;
+            background-color: #333333;
+        }
+        .nav li {
+            float: left;
+        }
+        .nav li a {
+            display: "block";
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        .nav li a:hover {
+            background-color: #111111;
+        }
+
+    </style>    
+
+    <meta name="description" 
+    content="Site for Learning/testing HTML/CSS and JS">
+    <meta name="author" content="elmobros">
+    <meta http-equiv="refresh" content="60">
+    <meta name="keywords" 
+    content="HMTL, CSS, JavaScript,Programming">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function displayResult() {
+            var elem = document.getElementById("testHeader").innerHTML;
+            if (elem === "YES or NO?" ) {
+            document.getElementById("testHeader").innerHTML = "YES!!!";
+            }
+            else {
+                document.getElementById("testHeader").innerHTML = "YES or NO?";
+            }
+        }
+    </script>
+
+    <!-- <base href="https://www.github.com/elmobros" target="_blank"> -->
+
+</head>
+
+
+<!-------------------------------start of body----------------------->
+<body style="background-color:rgba(238, 154, 123, 0.466);">
+
+<hr>
+<!---------------site nav------------------------------>    
+<h3>Site Navigation</h3>
+<div class="nav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming.html" >Programming</a></li>
+            <li><a href="CSSFloat.html" >CSSFloat Layout</a></li>
+            <li><a href="CSSFlexbox.html" >CSSFlexbox Layout</a></li>
+        </ul>
+    </nav>
+</div>
+
+<hr>
+
+<!------------------page BookMarks----------------->
+<h3>Jump to Section</h3>
+<p><a href="#intro">Introduction</a></p>
+<p><a href="#begin">My Public Repos, LinkedIn</a></p>
+<p><a href="#aug21">Jump to August 2021</a></p>
+<p><a href="#button">Jump to Testing a Button</a></p>
+<p><a href="#layout">Jump to HTML Layout</a></p>
+<hr>
+
+
+<!--------------------------Main Heading----------------------->    
+<h1  style="font-family: 'Times New Roman', Times, serif;font-size: xxx-large; text-align: center;">
+    My GitHub Homepage</h1>
+<hr style="height: 5px; background-color:black ; border-color: black;">
+
+<!-------------------------------Introduction----------------------->
+
+<h2 id="intro" style="text-align: center;">Introduction</h2>
+<hr>
+<p style="text-align: justify;">Welcome to my GitHub Homepage.<br><br>
+    This site is where you can find me trying out different things in HTML5, 
+    JavaScript, and other languages.   
+
+</p>
+
+<!-------------------------------My Public Repositories----------------------->
+<hr>
+<h2 id="begin">My Public Repos, LinkedIn</h2>
+<hr>
+<p>
+    My public repos on GitHub can be found <a href="http://www.github.com/elmobros"> HERE </a>.
+    
+    <br><br>  
+    There I have a few PyQt5 applications that focus on UI such as creating a 
+    mulitple choice platform for testing.
+    
+    <br><br>
+    
+    You can also find me on <a href="https://www.linkedin.com/in/sean-nomoto-2021-physics/">
+    <em>LinkedIn</em></a>.
+    
+    <br><br>
+    
+     
+    
+ 
+</p>
+
+<!-------------------------------Jobs----------------------->
+<hr>
+<h2 id="aug21">Jobs</h2>
+<hr>  
+Here is a list of some of the jobs/careers that are of interest to me.
+<ul>
+    <li>Software Testing/Development</li>
+    <li>Computer Networking</1i>
+    <li>Web Development</li>
+    <li>Data Science - e.g. MySQL</li>
+    <li>Cyber Security</li>
+    <li>Teaching - at the collegiate level for physics and math.</li>
+    <li>Post-Doctoral Research in Physics</li>
+</ul>
+
+
+
+<!-------------------------------Button Testing----------------------->
+<hr>
+<h2 id="button">Testing a Button</h2>
+<hr>
+<p>
+    In this section, I have added a button to try using the id element
+    in a JavaScript function.  Try pushing the button below.  It should
+    change the text.  Clicking the button multiple times should change
+    the text back and forth.
+</p>
+
+<button onclick="displayResult()">Click me!</button>
+<h2 id="testHeader">YES or NO?</h2>
+
+
+
+<h2 style="text-align: center;">Want to know the date and time?</h2>
+<p style="text-align: center;">Click the button below to find out!</p>
+
+<div style="text-align: center;">
+<button type="button"
+onclick="document.getElementById('dateTime').innerHTML = Date()">
+Click me to display Current Date and Time!</button>
+</div>
+
+<p style="text-align: center;" id="dateTime"></p>
+
+<!-------------------------------HTML Layout----------------------->
+<hr>
+<h2 id="layout">HTML Layout</h2>
+<hr>
+<p>
+    HTML Layout elements include &lt;header&gt;, 
+    &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;,
+    &lt;aside&gt;, and &lt;footer&gt;.  Here is a list and description
+    of the usual suspect elements.
+</p>
+
+
+    <ul style="text-align: left;">
+        <li>&lt;header&gt; - Defines a header for a document or a section</li>
+        <li>&lt;nav&gt; - Defines a set of navigation links</li>
+        <li>&lt;section&gt; - Defines a section in a document</li>
+        <li>&lt;article&gt; - Defines an independent, self-contained content</li>
+        <li>&lt;aside&gt; - Defines content aside from the content (like a sidebar)</li>
+        <li>&lt;footer&gt; - Defines a footer for a document or a section</li>
+        <li>&lt;details&gt; - Defines additional details that 
+            the user can open and close on demand</li>
+        <li>&lt;summary&gt; - Defines a heading for the &lt;details&gt; 
+            element
+        </li>
+    </ul>
+<p style="text-align: left;">
+    Here is a gif that shows the general HTML layout.  The source of the gif is 
+    <a href="https://www.w3schools.com">https://www.w3schools.com</a>.  
+</p>
+<div style="text-align: center;">
+    <img src="img_sem_elements.gif">
+</div>
+<p>
+    Here are four different HTML layout techniques to create multicolumn
+    layouts.  Each technique has its pros and cons:
+</p>
+
+<ul>
+    <li>CSS Framework</li>
+    <li>CSS float property</li>
+    <li>CSS flexbox</li>
+    <li>CSS grid</li>
+</ul>
+
+
+<!-------------------footer----------------------------------->
+<hr>
+<footer>
+    <p>Author: elmobros &copy; 2021 </p>
+</footer>
+
+<!-------------------------------end of body----------------------->
+</body>
+
+
+
+
+<!-------------------------------end of doc----------------------->
+</html>
