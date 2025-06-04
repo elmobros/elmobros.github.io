@@ -88,15 +88,15 @@ footer {
     <ul>
       
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">Energy</a></li>
-      <li><a href="#">Systems</a></li>
-      <li><a href="#">Work</a></li>
+      <li><a href="#energy">Energy</a></li>
+      <li><a href="#systems">Systems</a></li>
+      <li><a href="#work">Work</a></li>
     </nav>
     </ul>
   </nav>
   
   <article>
-    <h1>Energy</h1>
+    <h1 id="energy">Energy</h1>
     <p>Energy is an abstract concept that helps scientists keep track of dynamics of physical systems.
     In everyday language, we use the idea of energy to determine how power we gain or lose
     in different processes such as a windmill farm that produces wind power.
@@ -122,7 +122,7 @@ footer {
    
     </p>
   
-    <h1>
+    <h1 id="systems">
       Systems
     </h1>
     <p>
@@ -133,17 +133,23 @@ footer {
       Defining systems are useful because they help tell us whether any work
       done is considered to be a change in potential energy or just work itself.
       <br><br>
-      The formula for work is 
-      \[ W_{sys}=-\int \vec{F} \cdot d\vec{r}\]
-      The minus sign is due to the fact the work is done by the system.
+      
+
       
     </p>
   
-    <h1>
+    <h1 id="work">
       Work
     </h1>
     <p>
-
+      The formula for work is 
+      \[ W_{sys}=-\int \vec{F}_{sys} \cdot d\vec{r}\]
+      The minus sign is due to the fact the work is done by the system.
+      Work done on the system is
+      \[ W_{ext}=\int \vec{F}_{ext} \cdot d\vec{r}\]
+      <br><br>
+      The work done on a system is
+      \[ W_{ext}=\Delta E_{total}\]
     </p>
   </article>
 </section>
