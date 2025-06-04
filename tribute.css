@@ -1,0 +1,30 @@
+
+img {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+
+}
+
+body {
+  background-color: beige;
+  text-align: center;
+  font-family: sans-serif;
+}
+ul {
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+hr {
+  padding: 0.5rem 0;
+  background-color:rgb(100,150,150);
+  border: remove;
+}
+h1 {
+  background-color: rgb(250,250,250);
+
+}
+figcaption {
+  padding-top:0.5rem;
+}
