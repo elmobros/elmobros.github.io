@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey.css">
+    <title><h1>Survey Form</h2></title>
+  </head>
+
+  <body>
+    <!---------------site nav------------------------------>    
+<h3>Site Navigation</h3>
+<div class="nav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming.html" >Programming</a></li>
+            <li><a href="physics.html" > Physics</a></li>
+            <li><a href="scplus.html" >Security+</a></li>
+            <li><a href="math.html" >Differential Geometry</a></li>
+            <li><a href="portfolio.html" > freeCodeCamp Portfolio</a></li>
+            <li><a href="tribute.html" > Tribute</a></li>
+            <li><a href="techDoc.html" > Technical Doc</a></li>
+            <li><a href="landingPage.html" > Landing Page</a></li>
+            <li><a href="survey.html" > Survey Page</a></li>
+        </ul>
+    </nav>
+</div>
+    <h1 id="title">Survey Form</h2>
+    <p id="description">Making a survey form</p>
+    <br><br>
+    <p>This form does not collect or save any information.</p>
+<hr>
+    <main>
+      <section>
+        <form id="survey-form">
+          <fieldset>
+          <label for="name" id="name-label">Name: <input type="text" id="name" required placeholder="Enter your name"/></label>
+          <label for="email" id="email-label">Email: <input type="email" id="email" required placeholder="email@example.com"/></label>
+          <label for="number" id="number-label">Number: <input type="number" id="number" min="1" max="100" required min="1" max="100" placeholder="Enter 1 through 100"/></label>
+          <label for="dropdown">Windows or Apple?
+          <select id="dropdown" name="dropdown">
+            <option value="0" >Apple</option>
+            <option value="1">Windows</option>
+            </select>
+          </label>
+          </fieldset>
+<hr>
+          <fieldset >
+            <legend >Favorite fruit?</legend>
+            <label for="apple" id="apple-label" class="radio"> Apple <input type="radio" id="apple" checked value="1" name="fruit"/></label>
+            <label for="orange" id="orange-label" class="radio"> Orange <input type="radio" id="orange" value="2" name="fruit" /></label>
+          </fieldset>
+          <hr>
+          <fieldset >
+            <legend >Favorite shows? (check all that apply)</legend>
+            <label for="simpsons" id="simpsons-label" class="radio"> Simpsons <input type="checkbox" id="simpsons" checked value="1"/></label>
+            <label for="dallas" id="dallas-label" class="radio"> Dallas <input type="checkbox" id="dallas" value="2"/></label>
+            <label for="oz" id="oz-label" class="radio"> Oz <input type="checkbox" id="oz" value="3"/></label>
+            <label for="60minutes" id="60minutes-label" class="radio"> 60 Minutes <input type="checkbox" id="60minutes" value="4"/></label>
+          </fieldset>
+          <hr>
+          <fieldset>
+            <legend>Additional Comments</legend>
+            <label for="comments">Address any concerns here:</label>
+            <textarea id="comments" rows="5" cols="50" placeholder="I like coding on the beach..."></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit"/>
+
+          
+
+        </form>
+      </section>
+    </main>
+  </body>
+  <hr>
+  <footer>
+    <p> 2025 No Copyright - <a href="https://freeCodeCamp.org">freeCodeCamp.org</a></p>
+  </footer>
+

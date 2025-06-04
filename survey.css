@@ -1,0 +1,29 @@
+label {
+  display: block;
+  margin: 1em 0 1em 1em;
+  text-align: center;
+}
+input[type="number"] {
+  width: 155px;
+}
+fieldset {
+  border: 0;
+}
+body {
+  text-align: center;
+  background-color: rgba(0,255,0,0.3);
+}
+
+.radio {
+  display: inline;
+}
+hr {
+  padding: 0.1em;
+  background-color: black;
+  border-color: black;
+  margin-bottom: 1em;
+}
+checkbox {
+  display: inline;
+  min-width: 100px;
+}

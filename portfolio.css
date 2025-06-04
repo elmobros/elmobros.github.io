@@ -35,7 +35,7 @@ nav {
   
 }
 
-.nav-list > li, .nav-list > a {
+.nav-list > li, .nav-list > a, .nav-list > ul {
   
   list-style-type: none;
   font-weight: bold;
@@ -44,7 +44,10 @@ nav {
   font-size: 20px;
   font-family: Arial, sans-serif;
   
+  
 }
+
+
 
 .nav-list-item {
   text-decoration: none;
@@ -95,6 +98,11 @@ nav {
   text-align: center;
 }
 
+#about > ul {
+  list-style-type: circle;
+  display: inline-block;
+  text-align: left;
+}
 
 
 /* WORK*/
