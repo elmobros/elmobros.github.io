@@ -75,12 +75,9 @@ footer {
 <body>
 
     
-<h2>CSS Layout Float</h2>
-<p>In this page, I haved borrowed the example html page from <a href="https://www.w3schools.com/">www.w3schools.com</a>
-The point of the page is to demonstrate the CSS FLOAT method.  I have rewritten the contact to 
-show some basic physics concepts.
+<h2>Physics</h2>
+<p>In this page, general topics in physics are discussed.
 </p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
 
 <header>
   <h2>Work and Energy</h2>
@@ -91,9 +88,6 @@ show some basic physics concepts.
     <ul>
       
       <li><a href="index.html">Home</a></li>
-      <li><a href="programming.html" >Programming</a></li>
-      <li><a href="CSSFloat.html" >CSSFloat Layout</a></li>
-      <li><a href="CSSFlexbox.html" >CSSFlexbox Layout</a></li>
       <li><a href="#">Energy</a></li>
       <li><a href="#">Systems</a></li>
       <li><a href="#">Work</a></li>
@@ -107,11 +101,11 @@ show some basic physics concepts.
     In everyday language, we use the idea of energy to determine how power we gain or lose
     in different processes such as a windmill farm that produces wind power.
     <br><br>
-    But, we need to better define this idea of energy because there are differents kinds of
+    But, we need to better define this idea of energy because there are different kinds of
     energy.  The main two categories are:
     <ul>
-      <li>POTENTIAL energy</li>
-      <li>KINETIC energy</li>
+      <li>POTENTIAL energy, e.g. \(  U_{gravity} = mg\Delta x \)</li>
+      <li>KINETIC energy, e.g. \( T = \frac{p^2}{2m} =\frac{1}{2}mv^2 \)</li>
     </ul>
     <br><br>
     Potential energy is a type of energy that an object may have where the amount of energy 
@@ -120,22 +114,53 @@ show some basic physics concepts.
     Kinetic energy is a type of energy that an object may have where the amount of energy
     directly correlates to how much the object is MOVING.
     <br><br>
-    Those descriptions might sound <em>too nebulous</em>, but some examples are definitely in order.
+    Those descriptions might sound <em>too nebulous</em>, so some examples are definitely in order.
     For Kinetic energy, KE, the amount an object has tells us, more specifically, how fast it moves.
     For example, a baseball with 40 J (the Joule, J, is a unit of energy) of KE is moving
-    faster than an identical baseball with 20 J of KE.  We say identical because the formula 
-    for KE is 
+    faster than an identical baseball with 20 J of KE. 
     <br><br>
-    <math>
-      <mrow></mrow>
-    </math>
+   
+    </p>
+  
+    <h1>
+      Systems
+    </h1>
+    <p>
+      A system is a collection of one or more particles.  Defining a system helps determine
+      the scope of a physical system.  For example, a ball and the Earth together can be 
+      considered a system.  The ball alone and Earth alone can also be systems.
+      <br><br>
+      Defining systems are useful because they help tell us whether any work
+      done is considered to be a change in potential energy or just work itself.
+      <br><br>
+      The formula for work is 
+      \[ W_{sys}=-\int \vec{F} \cdot d\vec{r}\]
+      The minus sign is due to the fact the work is done by the system.
+      
+    </p>
+  
+    <h1>
+      Work
+    </h1>
+    <p>
+
     </p>
   </article>
 </section>
 
+
 <footer>
   <p style="text-align:left;">Author: elmobros &copy; 2025 </p>
 </footer>
-
+<script>
+    MathJax = {
+      TeX: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+</script>
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+</script>
 </body>
 </html>
