@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-------------------------------start of doc----------------------->
+<html lang="en-US">
+
+
+<!-------------------------------head----------------------->
+<head>
+    
+    
+    <title>My GitHub Home page</title> 
+
+    
+ 
+
+    <meta name="description" 
+    content="Site for Learning/testing HTML/CSS and JS">
+    <meta name="author" content="elmobros">
+    <meta http-equiv="refresh" content="60">
+    <meta name="keywords" 
+    content="HMTL, CSS, JavaScript,Programming">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dataScience.css">
+    <script>
+        function displayResult() {
+            var elem = document.getElementById("testHeader").innerHTML;
+            if (elem === "YES or NO?" ) {
+            document.getElementById("testHeader").innerHTML = "YES!!!";
+            }
+            else {
+                document.getElementById("testHeader").innerHTML = "YES or NO?";
+            }
+        }
+    </script>
+ 
+    <!-- <base href="https://www.github.com/elmobros" target="_blank"> -->
+
+</head>
+
+
+<!-------------------------------start of body----------------------->
+<body style="background-color:rgba(238, 154, 123, 0.466);">
+
+<hr>
+<!---------------site nav------------------------------>    
+<h3>Site Navigation</h3>
+<div class="nav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming.html" >Programming</a></li>
+            <li><a href="physics.html" > Physics</a></li>
+            <li><a href="scplus.html" >Security+</a></li>
+            <li><a href="math.html" >Differential Geometry</a></li>
+            <li><a href="portfolio.html" > freeCodeCamp Portfolio</a></li>
+            <li><a href="tribute.html" > Tribute</a></li>
+            <li><a href="techDoc.html" > Technical Doc</a></li>
+            <li><a href="landingPage.html" > Landing Page</a></li>
+            <li><a href="survey.html" > Survey Page</a></li>
+            <li><a href="dataScience.html" > Data Science</a></li>
+        </ul>
+    </nav>
+</div>
+
+<hr>
+<h3>Over </h3>
+ <a href="https://www.mcdonalds.com/us/en-us.html">
+    <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/640px-McDonald%27s_Golden_Arches.svg.png">
+</a>
+   <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1348444/t/5"></script>
+<h3>served!</h3>
+<hr>
+<!------------------page BookMarks----------------->
+<h3>Jump to Section</h3>
+<p><a href="#intro">Introduction</a></p>
+<p><a href="#R">R</a></p>
+<!--<p><a href="#aug21">Jump to August 2021</a></p>-->
+<!--<p><a href="#button">Jump to Testing a Button</a></p>-->
+
+<hr>
+
+
+<!--------------------------Main Heading----------------------->    
+<h1  style="font-family: 'Times New Roman', Times, serif;font-size: xxx-large; text-align: center;">
+    Data Science Page</h1>
+<hr style="height: 5px; background-color:black ; border-color: black;">
+
+<!-------------------------------Introduction----------------------->
+
+<h2 id="intro" style="text-align: center;">Introduction</h2>
+<hr>
+<p style="text-align: justify;">
+    Here, I am documenting what I am doing with R.
+</p>
+
+
+
+<!-------------------------------R----------------------->
+<hr>
+<h2 id="R">R</h2>
+<hr>  
+Here is a list of some of the jobs/careers that are of interest to me.
+<ul>
+    <li>Software Testing/Development</li>
+    <li>Computer Networking</li>
+    <li>Web Development</li>
+    <li>Data Science </li>
+    <li>Cyber Security</li>
+    <li>Teaching - at the collegiate level for physics and math.</li>
+    <li>Post-Doctoral Research in Physics</li>
+</ul>
+
+
+
+
+
+<hr>
+<div style="text-align: center;">
+<button type="button"
+onclick="document.getElementById('dateTime').innerHTML = Date()">
+Click me to display Current Date and Time!</button>
+</div>
+
+<p style="text-align: center;" id="dateTime"></p>
+
+
+<!-------------------footer----------------------------------->
+<hr>
+<footer>
+    <p>Author: elmobros &copy; 2025 </p>
+</footer>
+
+<!-------------------------------end of body----------------------->
+</body>
+
+
+
+
+<!-------------------------------end of doc----------------------->
+</html>
