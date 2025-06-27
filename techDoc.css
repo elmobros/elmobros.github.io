@@ -69,6 +69,7 @@ li {
   margin-bottom: 110px;
   max-width: 500px;
   color: black;
+  z-index: -1;
 }
 
 section article {
@@ -82,14 +83,12 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
-
-
 footer {
   background-color: black;
   color: white;
   position: relative;
   inset: auto 0 0 0;
-  width: 100rem;
+  width: 550px;
 }
 
 @media (max-width: 800px) {
@@ -125,7 +124,7 @@ footer {
     color: black;
     max-width: 450px;
     background-color: lab(34.39% 54.2 -83.33);
-
+    z-index: -1;
   }
   
   header {
@@ -143,7 +142,18 @@ footer {
   color: hsl(240, 2%, 8%);
   margin: 15px;
   font-size: 0.96em;
-  max-width: 350em
+  max-width: 300px;
  }
+
+ p {
+  max-width: 300px;
+ }
+ footer {
+  background-color: black;
+  color: white;
+  position: relative;
+  inset: auto 0 0 0;
+  width: 300px;
+}
 }
 
