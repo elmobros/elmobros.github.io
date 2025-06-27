@@ -1,6 +1,6 @@
 html,
 body {
-  min-width: 290px;
+  min-width: 300px;
   color: hsl(227, 82%, 2%);
   background-color: hsl(59, 57%, 58%);
   font-family: 'Open Sans', Arial, sans-serif;
@@ -18,6 +18,7 @@ body {
   border-right: solid;
   border-color: #00000066;
   color:#000000;
+  z-index: 1;
 }
 
 
@@ -81,19 +82,7 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
-code {
-  display: block;
-  text-align: left;
-  white-space: pre-line;
-  position: relative;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 5px;
-}
+
 
 footer {
   background-color: black;
@@ -103,32 +92,40 @@ footer {
   width: 100rem;
 }
 
-@media only screen and (max-width: 815px) {
-  /* For mobile phones: */
+@media (max-width: 800px) {
+  
   #navbar ul {
     border: 1px solid;
-    height: 207px;
+    height: 200px;
+  }
+
+  html, body {
+  color: hsl(227, 82%, 2%);
+  background-color: lch(74.46% 27.61 292.06);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+  
+  position: absolute;
   }
 
   #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
+    position: fixed;
+    top: 0px;
     width: 100%;
     max-height: 275px;
     border: none;
-    z-index: 1;
     border-bottom: 2px solid;
     color: black;
+    z-index: 1;
   }
-
   #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 0px;
     color: black;
+    max-width: 450px;
+    background-color: lab(34.39% 54.2 -83.33);
+
   }
   
   header {
@@ -139,21 +136,14 @@ footer {
   font-size: 1.8em;
   font-weight: thin;
   background-color: #fd5656;
-}
-}
-
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: -10px;
-    color: black;
+  max-width: 250px;
   }
 
-  code {
-    margin-left: -20px;
-    width: 100%;
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 45px;
-    min-width: 233px;
-  }
+  section article {
+  color: hsl(240, 2%, 8%);
+  margin: 15px;
+  font-size: 0.96em;
+  max-width: 350em
+ }
 }
+
