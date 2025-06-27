@@ -2,7 +2,7 @@ html,
 body {
   min-width: 290px;
   color: #4d4e53;
-  background-color: #ffffff;
+  background-color: hsl(59, 57%, 58%);
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.5;
 }
@@ -11,10 +11,9 @@ body {
 
 #navbar {
   position: fixed;
-  min-width: 290px;
+  max-width: 250px;
   top: 0px;
   left: 0px;
-  width: 300px;
   height: 100%;
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
@@ -22,28 +21,30 @@ body {
 
 header {
   color: black;
-  margin: 10px;
   text-align: center;
   font-size: 1.8em;
   font-weight: thin;
+  background-color: #fd5656;
+  margin-bottom: 5px;
+  margin-top: 2px;
 }
 
 #main-doc header {
   text-align: left;
-  margin: 0px;
 }
 
-#navbar ul {
+.nav ul {
   height: 88%;
   padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-#navbar li {
+
+li {
   color: #4d4e53;
   border-top: 1px solid;
-  list-style: none;
+  list-style-type:disc;
   position: relative;
   width: 100%;
 }
@@ -51,22 +52,26 @@ header {
 #navbar a {
   display: block;
   padding: 10px 30px;
-  color: #4d4e53;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
+  background-color: #ffa600;
+  font-weight: bold;
 }
 
 #main-doc {
   position: absolute;
-  margin-left: 310px;
+  margin-left: 250px;
   padding: 20px;
   margin-bottom: 110px;
+  max-width: 500px;
 }
 
 section article {
   color: #4d4e53;
   margin: 15px;
   font-size: 0.96em;
+  max-width: 500rem
 }
 
 section li {
@@ -120,6 +125,16 @@ footer {
     margin-left: 0px;
     margin-top: 270px;
   }
+  
+  header {
+  color: black;
+  width:50rem;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+  background-color: #fd5656;
+}
 }
 
 @media only screen and (max-width: 400px) {
