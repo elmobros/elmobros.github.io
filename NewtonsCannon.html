@@ -1,0 +1,73 @@
+Newton's Cannon
+This simulation is based on Isaac Newton's famous thought experiment and illustration of firing a projectile from a high
+mountaintop at various speeds, as he described in A Treatise
+of the System of the World.
+
+<DOCTYPE html>
+
+    <head>
+
+    <title>Newton's Cannon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="newtonCannon.css">
+
+    <meta name="description"
+    content="Site for Learning/testing HTML/CSS and JS">
+    <meta name="author" content="elmobros">
+    <meta http-equiv="refresh" content="60">
+    <meta name="keywords" 
+    content="HMTL, CSS, JavaScript,Programming">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <br>
+<a href="http://physics.weber.edu/">Click Here!</a>
+        <br>
+<a href="http://books.google.com/books?id=DXE9AAAAcAAJ">
+    <i>A Treatise of the System of the World</i> by Isaac Newton</a>
+    <br>
+    <div style="position:relative; width: 500px; margin-left:auto; margin-right:auto;">
+    <br>
+    <img style="position: absolute;" src="http://physics.weber.edu/schroeder/html5/NewtonDrawing.jpg" 
+    width="500" height="500">    
+    <canvas style="position: relative;" id="theCanvas" width="500" height="500">
+            Canvas not supported; please update your browser.
+        </canvas>
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <input type="button" value="Fire!" onclick="fireProjectile();">
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <input type="button" value="STOP!" onclick="stopProjectile();">
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <input type="button" value="Resume!" onclick="resumeProjectile();">
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <input type="button" value="Reset!" onclick="resetProjectile();">
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <input type="range" value="3000" onclick="resetProjectile();">
+    </div>
+
+
+
+
+
+
+
+    <script src="newtonCannon.js"></script>
+    </body>
+    
+    <footer>
+
+    </footer>
+</DOCTYPE>
