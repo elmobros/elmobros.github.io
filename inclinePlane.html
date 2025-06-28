@@ -1,16 +1,13 @@
-Newton's Cannon
-This simulation is based on Isaac Newton's famous thought experiment and illustration of firing a projectile from a high
-mountaintop at various speeds, as he described in A Treatise
-of the System of the World.
+Simulation of an ball rolling down an incline plane.
 
 <DOCTYPE html>
 
     <head>
 
-    <title>Newton's Cannon</title>
+    <title>Incline Plane</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="newtonCannon.css">
+  <link rel="stylesheet" href="inclinePlane.css">
 
     <meta name="description"
     content="Site for Learning/testing HTML/CSS and JS">
@@ -42,45 +39,39 @@ of the System of the World.
     </nav>
 </div>
 
-
-        <br>
-<a href="http://physics.weber.edu/">Click Here!</a>
-        <br>
-<a href="http://books.google.com/books?id=DXE9AAAAcAAJ">
-    <i>A Treatise of the System of the World</i> by Isaac Newton</a>
-    <br>
     <div style="position:relative; width: 500px; margin-left:auto; margin-right:auto;">
+
     <br>
-    <img style="position: absolute;" src="http://physics.weber.edu/schroeder/html5/NewtonDrawing.jpg" 
-    width="500" height="500">    
+     
     <canvas style="position: relative;" id="theCanvas" width="500" height="500">
             Canvas not supported; please update your browser.
-        </canvas>
+    </canvas>
     </div>
     <br>
     <div style="text-align: center;">
-    <input type="button" value="Fire!" onclick="fireProjectile();">
+    <input type="button" value="Start!" onclick="startMotion();">
     </div>
     <br>
     <div style="text-align: center;">
-    <input type="button" value="STOP!" onclick="stopProjectile();">
+    <input type="button" value="STOP!" onclick="stopMotion();">
     </div>
     <br>
     <div style="text-align: center;">
-    <input type="button" value="Resume!" onclick="resumeProjectile();">
+    <input type="button" value="Resume!" onclick="resumeMotion();">
     </div>
     <br>
     <div style="text-align: center;">
-    <input type="button" value="Reset!" onclick="resetProjectile();">
+    <input type="button" value="Reset!" onclick="resetMotion();">
     </div>
     <br>
     <div style="text-align: center;">
-    <input id="speedSlider" type="range" min="0" max="8000" 
-    step="100" value="3000" oninput="showSpeed();" onchange="showSpeed();">
+    <input id="radiusSlider" type="range" min="0" max="1.5"
+    step="0.1" value="0.1" oninput="updateRadius()" onchange="updateRadius()">
     </div>
     <div style="text-align: center;">
-    Initial speed = <span id="speedReadout">3000</span> m/s
+    Radius = <span id="radiusReadout">0.1</span> 
     </div>
+   
 
 
 
@@ -89,7 +80,7 @@ of the System of the World.
 
 
 
-    <script src="newtonCannon.js"></script>
+    <script src="inclinePlane.js"></script>
     </body>
     
     <footer>
