@@ -9,6 +9,8 @@
         var mountainHeight = earthRadius * 0.165; // chosen to match image
         var timer;
         var x, y, vx, vy;
+        var speedSlider = document.getElementById("speedSlider");
+        var speedReadout = document.getElementById("speedReadout");
 
         var moveOn;
 
@@ -58,7 +60,7 @@
             window.clearTimeout(timer);
             x = 0;
             y = earthRadius + mountainHeight;
-            vx = 7500;
+            vx = Number(speedSlider.value);
             vy = 0;
             moveProjectile();
         }
@@ -76,4 +78,8 @@
         function resetProjectile() {
             moveOn = false;
             theContext.clearRect(0, 0, theCanvas.width, theCanvas.height);
+        }
+
+        function showSpeed() {
+            speedReadout.innerHTML = speedSlider.value;
         }

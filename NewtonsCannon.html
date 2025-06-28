@@ -55,8 +55,13 @@ of the System of the World.
     </div>
     <br>
     <div style="text-align: center;">
-    <input type="range" value="3000" onclick="resetProjectile();">
+    <input id="speedSlider" type="range" min="0" max="8000" 
+    step="100" value="3000" oninput="showSpeed()" onchange="showSpeed();">
     </div>
+    <div style="text-align: center;">
+    Initial speed = <span id="speedReadout">3000</span> m/s
+    </div>
+
 
 
 
