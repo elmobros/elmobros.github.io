@@ -170,6 +170,7 @@ const convertNumber = () => {
 }
 
 
+
 // event listeners
 convertBtn.addEventListener("click", checkUserInput);
 
