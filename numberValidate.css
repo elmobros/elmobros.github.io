@@ -1,0 +1,28 @@
+html {
+  background-color: rgb(104, 2, 127);
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.freecodecamp-logo {
+  height: 30px;
+}
+
+#label-container {
+  color: white;
+}
+a {
+  color: yellow;
+}
+#results-div {
+  background-color:rgb(255, 174, 174);
+}
+
+#check-btn {
+  background-color:rgb(179, 255, 179)
+}
+
+#clear-btn {
+  background-color: rgb(255, 255, 200);
+}
