@@ -10,7 +10,7 @@ const output = document.getElementById("output");
 
 
 
-// validate user input
+// validate user input and convert number
 const checkUserInput = () => {
 
   output.innerHTML= ``;
