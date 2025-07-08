@@ -1,0 +1,56 @@
+body {
+
+background-color: rgb(36, 185, 76)
+}
+
+img {
+  height: 20px;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#input-label {
+  margin: 5px;
+}
+
+#cash {
+  margin: 5px;
+}
+
+#total-container {
+  margin-bottom: 10px;
+}
+
+#total-label {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#total-span {
+  background-color:rgb(110, 171, 110);
+  border: 1px solid black;
+}
+
+#drawer-container {
+  background-color: white;
+  height: 250px;
+  width: 200px;
+}
+
+#drawer-container > p {
+  margin: -1px;
+  margin-left:8px;
+  font-weight: bold;
+}
+
+#change-in-drawer {
+  font-weight: bold;
+}
