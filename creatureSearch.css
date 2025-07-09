@@ -1,0 +1,81 @@
+html {
+  background-color: blue;
+  
+}
+
+img {
+  height: 15px;
+}
+
+main {
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+  
+  
+}
+h4 {
+  font-weight: bolder;
+  font-family: papyrus;
+  
+  
+}
+p {
+  background-color: rgb(65, 106, 255);
+  border: solid 1px black;
+  width: 200px;
+  font-weight: bolder;
+  font-family: papyrus;
+  
+}
+
+#creature-name 
+{
+  background-color: rgb(249, 181, 141);
+  width: 200px;
+}
+#creature-id{
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#weight {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#height {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#types {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#hp {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#attack {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#defense {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#special-attack {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#special-defense {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#speed {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
+#special-description {
+background-color: rgb(249, 181, 141);
+width: 200px;
+}
