@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  font-family: Serif;
+  padding-top: 40px;
+}
+
+.name {
+  background-color: white;
+}
+
+
+
+section  {
+  background-color: white;
+  width: 50rem;
+  height: 150%; 
+  display: flex;
+  flex-direction: column;
+  
+  align-items: normal;
+  border-radius: 20px;
+  padding: 20px;
+  
+}
+h1 {
+  font-size: 20px;
+}
+
+
+#new-quote, #tweet-quote {
+  display: flex;
+  text-align: flex-end;
+  position: relative;
+}
+
+#tweet-quote {
+  padding-top: 10px;
+}
+
+#new-quote {
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+}
+
+.theQuote {
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.theAuthor {
+  font-size: 15px;
+  font-family: Garamond;
+}
+
