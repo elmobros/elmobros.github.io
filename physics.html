@@ -4,71 +4,9 @@
 <title>Physics</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-    
+<link rel="stylesheet" href="physics.css">
 
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  background: rgb(202, 121, 121);
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
 <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 </head>
@@ -106,7 +44,7 @@ footer {
     But, we need to better define this idea of energy because there are different kinds of
     energy.  The main two categories are:
     <ul>
-      <li>POTENTIAL energy, e.g. \(  U_{gravity} = mg\Delta x \)</li>
+      <li>POTENTIAL energy, e.g. \(  V_{gravity} = mg\Delta x \)</li>
       <li>KINETIC energy, e.g. \( T = \frac{p^2}{2m} =\frac{1}{2}mv^2 \)</li>
     </ul>
     <br><br>
@@ -119,7 +57,10 @@ footer {
     Those descriptions might sound <em>too nebulous</em>, so some examples are definitely in order.
     For Kinetic energy, KE, the amount an object has tells us, more specifically, how fast it moves.
     For example, a baseball with 40 J (the Joule, J, is a unit of energy) of KE is moving
-    faster than an identical baseball with 20 J of KE. 
+    faster than an identical baseball with 20 J of KE.  If the only object in the universe is the baseball,
+    then we speak of the baseball as the system and its KE is 40 J.  However, we know that we are surrounded
+    by atoms and molecules everywhere that make up matter.  This means we need to definition of a system to 
+    to keep track of the energy, the forms it takes on and how it can be transferred between objects.
     <br><br>
    
     </p>
@@ -130,28 +71,267 @@ footer {
     <p>
       A system is a collection of one or more particles.  Defining a system helps determine
       the scope of a physical system.  For example, a ball and the Earth together can be 
-      considered a system.  The ball alone and Earth alone can also be systems.
+      considered a system.  The ball alone and Earth alone can also be systems.  A single electron of the 
+      baseball can be the system.
       <br><br>
       Defining systems are useful because they help tell us whether any work
       done is considered to be a change in potential energy or just work itself.
       <br><br>
-      
-
+      Systems are either open or closed.  An open system means that energy can go into or out of 
+      the system.  A closed system is when energy cannot enter or leave the system.  Realistically, all 
+      systems are open.  But, if you consider the entire universe as the system, then it is likely closed.
+      However, it is absolutely certain that the universe is closed because we don't know if there is 
+      anything beyond it yet.
+      <br><br>
+      In any case, the system and the collection therein can be chosen to be whatever may make the analysis
+      meaningful and useful (and easier).  We first consider closed systems.
+      <br><br>
       
     </p>
-  
+    <h1>Closed Systems</h1>
+    <p>
+      A closed system is one where no energy can enter or leave the system.  The total energy
+      of any system is a sum of Kinetic and potential energy.
+      \[ E_{total} = T + V \]
+      Because the system is closed, this total sum of energy is constant even as the system evolves
+      with time.
+      <br><br>
+      A system may also have thermal or internal energy, for which our sum may be written as
+      \[ U + E_{total} = T + V \] 
+      \( E_{total} \) is then the total mechanical energy of the system.  \( V \) is the potential energy 
+      which is due to forces such as electric, gravitational, elastic, etc.  We will not worry about
+      thermal energy for the moment.  The only comment I will make about thermal energy is that it is 
+      directly related to the average kinetic energy, i.e. their average motion, on a microscopic scale.
+      <br><br>
+      So, our total energy takes the form
+      \[ E_{total} = T + V \]
+      Because this total is constant, taking the difference in total energy from one time to any other time 
+      of the evolution of the system gives
+      \[ \Delta E_{total} = E_{f} - E_{i} = 0 \]
+      or
+      \[ E_{i} = E_{f} \]
+      This makes the analysis of a closed system easy to analyze.  
+      <br><br>
+      For example, if a rock has is dropped from some height, it will have \( V^{grav} \) energy.  As 
+      the rock falls, it will speed up.  Then \(T\) must increase.  However, \( E_{total}\) must stay the 
+      same amount.  This means that \( V^{grav} \) must decrease by the same amount that \( T \) increases.
+      <br><br>
+      At the top, we can write
+      \[ E_{total} = V^{grav}_{top} \]
+      while during the fall,
+      \[ E_{total} = T_{mid} + V^{grav}_{mid} \]
+      and finally, at the bottom just before hitting the ground and there is no more height to fall,
+      \[ E_{total} = T_{bot} \]
+      Note that it is not necessary to write \( E_{total; top, mid, bot, etc.} \) because
+      the total never changes.  However, it may be helpful to write out to keep track of the state of the 
+      system at different times.
+      <br><br>
+      Say we know the initial height and mass.  Then we would use the expression for the total energy
+      at the top to estimate the total energy.  Or, we know the speed at the bottom, etc.  Then if we know the
+      total energy, we can know other properties of the system at any other time.  That is,
+      if we know some height, we can determine the potential energy \( V^{grav} = mgh \) and then
+      the kinetic energy by 
+      \[ T = E_{total} - V^{grav} \]
+      from which we use
+      \[ T = \frac{1}{2}mv^2 \]
+      to solve for the speed \( v \) at that height.
+      <br><br>
+      Or, we know the speed and estimate the kinetic energy.  And, in the reverse way,
+      determine the potential energy and with that, the height.
+      <br><br>
+
+    </p>
     <h1 id="work">
-      Work
+      Work & Conservation of Energy
     </h1>
     <p>
+      When a system can interact with its surroundings (external system), the system can gain or lose energy.
+      This makes the system an open one.  From the interaction, the external system will gain or lose
+      energy while the system of interest will lose or gain that energy exactly.  The transfer
+      of this energy is called work.
       The formula for work is 
-      \[ W_{sys}=-\int \vec{F}_{sys} \cdot d\vec{r}\]
-      The minus sign is due to the fact the work is done by the system.
-      Work done on the system is
-      \[ W_{ext}=\int \vec{F}_{ext} \cdot d\vec{r}\]
+      \[ W_{sys}=-\int \vec{F}_{sys}(\vec{r}) \cdot d\vec{r} = -\int F_{sys}(r)\cos (\theta) dr\]
+      where the force is exerted by the system on its surroundings and can be a function 
+      of position.  \(\theta \) is the angle between the direction of the 
+      applied force and the displacement, \( d\vec{r} \).  The integral is over the path of
+      the trajectory, usual some initial and final position.
       <br><br>
-      The work done on a system is
-      \[ W_{ext}=\Delta E_{total}\]
+      The minus sign is due to the fact the work is done by the system.  Some references describe
+      the work more generally as work done by some external force on the system.  
+      \[ W=\int \vec{F}_{applied}(\vec{r}) \cdot d\vec{r}\]
+      This is the general definition of work.  One can estimate the work done by any force of interest.
+      <br><br>
+      If we take a single particle as the system and suppose that everything else is external to it, 
+      then, there is no potential energy.  The work can only increase or decrease the amount of 
+      kinetic energy of the particle.  This is called the
+      <br><br>
+      Work-Kinetic Energy Theorem.
+      <br><br>
+      For a free particle with some velocity, the total mechanical energy is just the kinetic energy.
+      \[ E_{total} = T = \frac{1}{2}mv^2 \]
+      If there is no work, 
+      \[ \Delta T = T_{f} - T_{i} = 0 \]
+      But, if there is, 
+      \[ \Delta T = T_{f} - T_{i} = W \]
+      Suppose we take the average acceleration of the particle, then with 
+      \[ \vec{F}_{net} = m\vec{a} \]
+      the work becomes
+      \[ W = \int \vec{F}_{net} \cdot d\vec{r} = \int m\vec{a} \cdot d\vec{r} \]
+      which is just
+      \[ W=m \int a dr \cos(\theta) = ma \Delta x \]
+      where we assume that the force and displacement are colinear, and in one dimension, \( r=x \).
+      Recall that
+      \[ a = \frac{v_f^2 -v_i^2}{2\Delta x} \]
+      Immediately, we see that we arrive at the expression of kinetic energy as a difference.
+      \[ W = m \left( \frac{v_f^2 -v_i^2}{2\Delta x} \right) \Delta x = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 = \Delta T \]
+      <br><br>
+      We now address the negative sign when applying the work done by the system.
+      We begin with the work-kinetic energy theorem,
+      \[ \Delta T = W \]
+      If we now allow the external entity doing work on the free particle to be 
+      included in the the system, the work that was done is now included in any changes.
+      \[ 0 = \Delta T - W \]
+      Because the work was
+      \[ W=\int \vec{F}_{applied}(\vec{r}) \cdot d\vec{r}\]
+      our running sum of changes in energy becomes
+      \[ 0 = \Delta T - \int \vec{F}_{applied}(\vec{r}) \cdot d\vec{r}\]
+      Now, since the force being applied is now by an interaction in the system, 
+      \[ \vec{F}_{applied} = -\vec{F}_{sys} \]
+      we have then
+      \[ 0 = \Delta T + \int \vec{F}_{sys}(\vec{r}) \cdot d\vec{r}\]
+      This says that the negative work done by the system is an increase in potential energy.
+      For example, when a ball is tossed up in the air, the Earth would do negative
+      work on the ball.  Or, equivalently,  the ball gains potential energy.
+      <br><br>
+      The previous example can be thought of this way.  While its true the ball has negative work
+      done on it by the Earth, when the Earth is included in the system, it is really increasing
+      the amount of energy that <i>could</i> be used to do positive work later.  That is, the potential 
+      energy is defined by the work the system can do by 
+      \[ \Delta V = - \int \vec{F}_{sys}(\vec{r}) \cdot d\vec{r} =-W_{sys}\]
+      where the force is conservative.  This means that the work done by the system is path independent.
+      <br><br>
+      Since we are now including the external entity in the system, and the work is defined as 
+      the negative change in potential, we might as write the total change in energy of the system as
+      \[ 0 = \Delta T + \Delta V \]
+      which is just
+      \[ 0 = \Delta E_{total} \]
+      We can have other external forces acting on the system at the same time we have potential energy.
+      The most general case of total energy changing in a system is then
+      \[ \Delta E_{total} = W \]
+      <br><br>
+      A few other notes are necessary here.  We could include thermal energy and the transfer of it.
+      This generalizes the total energy expression.  There is also a distinction between forces 
+      that depend on position versus forces that depend on velocity where the former are called 
+      conservative forces while the latter are non-conservative forces.
+      <br><br>
+      Conservative forces obey the conservation of energy principle and the work they do is directly
+      related to potential energy.  Particularly, these forces are defined by the gradient of the 
+      potential energy they describe.
+      \[ \vec{F}_{cons} = -\nabla V(\vec{r}) \]
+      The negative sign is due to fact that the positive work by the system is the negative change 
+      in potential energy.  Examples of conservative forces are gravitational, electric, and spring forces.  Also, the 
+      work these forces do is path independent.  This is obvious if you consider a vector force field
+      that is strictly dependent on position alone.  Let's suppose we use our definition of a conservative force
+      in terms of the potential energy and integrate the work done.
+      \[ W_{cons} = -\int \vec{F}_{cons}(\vec{r}) \cdot d\vec{r} = \int \nabla V(\vec{r}) \cdot d\vec{r} = V(\vec{r_i}) - V(\vec{r_f}) \]
+      The last equality shows directly that path does not matter.  What's more is that if the starting
+      position is the same as the final position, the value of the potential energy is the same at the same
+      location and the work done is zero.
+      <br><br>
+      Many references will say then there are only two general statements on conservative forces.
+      \[ W_{loop} = 0 \]
+      and
+      \[ W_{ \vec{r}_f \rightarrow \vec{r}_i } = V(\vec{r}_f) -V(\vec{r}_i ) \]
+      <br><br>
+      If we have some conservative forces in the system and some outside, we write the law of
+      conservation of energy as
+      \[ \Delta E_{total} = W_{cons} \]
+      <br><br>
+      Now, non-conservative forces are not defined by a potential energy.  They are dependent on velocity.
+      An example is friction and because it always opposes motion, it always does negative work
+      to decrease the total energy of the system.  Some references may call this a dissipative force.
+      Or, that the work done by friction is dissipated as thermal energy.  This type of force 
+      does not obey the conservation of energy principle.  However, as far as we know, energy 
+      is always conserved in the universe.  The dissipated energy is not easy to track, but can be
+      accounted for as heat transfer.  A more accurate definition is to say that friction is not defined
+      by a negative gradient of a scalar function, i.e. potential energy.  As a vector field, it is not
+      conservative.  The curl of the vector field is not zero.
+      <br><br>
+      In any case, we can write our statement as
+      \[ \Delta E_{total} = W_{cons} + W_{non-cons} \]
+      or
+      \[ \Delta E_{total} = W_{cons} - E_{diss} \]
+      where it is understood that \( E_{diss} \) is always positive or zero and accounts for energy
+      lost due to friction or other non-conservative forces.
+      <br><br>
+      If we include the thermal or internal energy, we have
+      \[ \Delta U + \Delta E_{total} = W_{cons} + W_{non-cons} \]
+      This is the most general statement of conservation of energy for a system.
+    </p>
+    <h1>
+      Conservative Forces
+    </h1>
+    <p>
+      A questions then becomes, what type of forces do we that are conservative and what form of
+      potential energy do they have.  We start with gravity.
+      <br><br>
+      The law of gravity is
+      \[ \vec{F}_{gravity} = -G\frac{m_1 m_2}{r^2}\hat{r} \]
+      where \( G \) is the gravitational constant, \( m_1 \) and \( m_2 \) are the masses of two objects.
+      Near the surface of the Earth, we approximate the acceleration due to gravity as 
+      \[ g = \frac{GM_{Earth}}{R_{Earth}^2} \approx 9.81 \frac{m}{s^2}\]
+      We get the familiar weight due to gravity, \( \vec{F}_{grav} = m\vec{g} \).
+      If we apply our gradient definition, we can determine the potential energy.
+      \[ \vec{F}_{grav} = -\nabla V_{grav}\]
+      We integrate over the vertical direction, for small heights we are okay since mere kilometers
+      are small compared to the over 6 million meters of the Earth radius.
+      \[ - \int \vec{F}_{grav} \cdot d\vec{r} = - \int \nabla V_{grav} \cdot dz\hat{z} \]
+      then
+      \[ - mg \int dz = -\int \frac{dV_{grav}}{dz} dz \]
+      we can take the limits to be some lower height, \( z_i \), and some higher height, \( z_f \).
+      The potential energy is now
+      \[ V_{grav}(z) =  mg \Delta z \]
+      This is the expression we had earlier.  
+      <br><br>
+      We can do the the same thing for the general law of gravity.
+      \[ - \int \vec{F}_{gravity} \cdot d\vec{r} = - \int \nabla V_{gravity} \cdot d\vec{r} \]
+      then
+      \[ G m_1 m_2 \int \frac{1}{r^2} dr = \int \frac{dV_{gravity}}{dr} dr \]
+      Integration then gives
+      \[ V_{gravity}(r) = -G\frac{m_1 m_2}{r} \]
+      Be careful.  The limits of the integration must begin from infinity because the potential and
+      force are undefined at \( r=0 \).  Also, we expect the potential energy to go to zero for a position
+      infinitely far away such that there is no interaction gravitationally.
+      The negative sign tells us that the force was attractive and the potential energy can be
+      thought of as a binding energy.  An object with a kinetic energy equal to the magnitude
+      of this gravitational binding energy will be able to escape the gravitational pull and influence
+      on an object's motion.  Note that ths total energy would then be zero.
+      <br><br>
+      The spring force for small displacements follows Hooke's law, in one dimension,
+      \[ \vec{F}_{spring} = -k x \hat{x} \]
+      where \( k \) is the spring constant and \( x \) is the displacement from equilibrium.
+      We can find the potential energy by
+      \[  \int \vec{F}_{spring} \cdot d\vec{r} = - \int \nabla V_{spring} \cdot dx\hat{x} \]
+      then
+      \[  \int ( -k x \hat{x}) \cdot dx \hat{x} = - \int \nabla V_{spring} \cdot dx\hat{x} \]
+      we then have
+      \[ -k \int x dx = -\int \frac{dV_{spring}}{dx} dx \]
+      which gives
+      \[ V_{spring}(x) = \frac{1}{2} k \Delta x^2 \]
+      Here, \( \Delta x = x_f - x_i \) is the displacement from equilibrium.
+      <br><br>
+      In electrostatics, the force between two charges is given by Coulomb's law,
+      \[ \vec{F}_{elec} = k_e \frac{q_1 q_2}{r^2} \hat{r} \]
+      where \( k_e \) is Coulomb's constant, \( q_1 \) and \( q_2 \) are the two charges.
+      We can find the potential energy by
+      \[ - \int \vec{F}_{elec} \cdot d\vec{r} = - \int \nabla V_{elec} \cdot d\vec{r} \]
+      the result is similar to that of the gravitational force, as expected.
+      \[ V_{elec}(r) = k_e \frac{q_1 q_2}{r} \]
+      The sign of the potential energy depends on the signs of the charges.  Like charges repel
+      and unlike charges attract.  The potential energy is positive for like charges and negative for unlike charges.
+      <br><br>
+      There are other conservative forces such as magnetic forces, but they are velocity dependent.  However, as magnetostatic 
+      forces, they can be derived from a vector potential and not as a scalar potential function.
     </p>
   </article>
 </section>
